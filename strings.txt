@@ -1,0 +1,18 @@
+STRINGS
+strings - These are collection of characters in a continous fashion terminated by a null character.
+TAKING INPUT IN STRING
+we can input in a string using the following methodes-
+SCANF- scanf("%s",str)
+In the following format the space acts as a delimitter which means the input will be terminated if we press space.
+SCANF("%[^\n]s",str);
+In the above format the scanf in modified such that new line act as a delimitter.
+GETS(str);
+The gets function belongs to stdio.h and it is dedicated function for string input.The new line acts as a delimitter for gets function. 
+It is to be noted that gets does not perform any array boundary checking which usally reserves in buffer overflow.
+FGETS("str,len,stdin");
+Fgets is a dedicated function for a string input. It belongs to stdio.h header file.
+The delimitter for fgtes is- 
+1.New line
+2.End a line
+3.End of limit
+NOTE: The fgets perform arrray boundary checking thus it is the best way to take input in a string.
